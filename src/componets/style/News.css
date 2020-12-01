@@ -1,0 +1,17 @@
+.news{
+    margin: 25px 50px;
+}
+.news h3{
+    letter-spacing: 3px;
+    font-size: x-large;
+}
+.news p{
+    letter-spacing: 1px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 27px; /* spacing between a line in text  */
+}
+.news .linkk{
+    text-align: right;
+    font-size: 12px;
+}

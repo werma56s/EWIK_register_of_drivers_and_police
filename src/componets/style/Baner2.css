@@ -1,0 +1,38 @@
+.home-baner{
+
+}
+.baner2{
+    background-image: url('../../img/baner1.jpg'); 
+    background-repeat: repeat-y;
+     display: inline-flex;
+    height: 310px;
+    width: 100%;
+    align-items: center;
+    justify-content: center ;
+}
+
+.baner2 p{
+    align-items: center;
+    text-align: center;
+    font-size: xxx-large;
+    margin: auto 30px;
+    color: #62b8dd;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+    font-family:  Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 780px){
+    .baner2{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    .baner2 p{
+        font-size: xx-large;
+    }
+}

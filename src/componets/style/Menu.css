@@ -1,0 +1,87 @@
+/*Menu stylizacja obok siebie */
+.wrapper{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+h1.logo{
+    width: 100px;
+    float: left;
+    padding-left: 0.5%;
+}
+nav{
+    float: right;
+}
+nav h3{
+    text-indent: -10000px;
+    height: 0;
+    margin: 0;
+}
+nav li{
+    float: left;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 23px;
+}
+nav li a:hover{
+    text-decoration: none;
+    color: #81d3f9;
+    font-size: 23px;
+}
+@media screen and (max-width: 760px){
+    h1.logo{
+        margin: auto;
+        float: none;
+    }
+    nav{
+        float: none;
+    }
+    nav ul{
+        margin: 0;
+        padding:0;
+        display: inline-flex;
+    }
+    nav li{
+        margin: 3px 16px;
+        
+    }
+}
+@media screen and (max-width: 480px){
+    .wrapper{
+        padding: 0px;
+    }
+    h1.logo{
+        margin: 0;
+        float: none;
+        padding-left: 12px;
+        font-weight: 600;
+        width: 100%;
+        font-size: xxx-large;
+    }
+    nav{
+        float: none;
+    }
+    nav ul{
+        margin: 0;
+        padding:0;
+        display: grid;
+    }
+    nav li{
+        margin: 3px 0;
+        border-bottom: 3px solid #033469;
+        opacity: 0.9;
+    }
+    nav li:last-child{
+        margin: 3px 0;
+        border-bottom: 0px solid #033469;
+        opacity: 0.9;
+    }
+    nav li:hover{
+        opacity: 1;
+    }
+}

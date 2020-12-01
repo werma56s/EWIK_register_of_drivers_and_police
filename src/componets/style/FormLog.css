@@ -1,0 +1,35 @@
+.formmm{
+    padding: 4%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.formmm form{
+    border: solid 6px white;
+    padding: 3%;
+    width: 60%;
+    margin: auto;
+}
+
+.formm h2{
+    font-size: xxx-large;
+    text-transform:uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.formmm h2{
+    margin: 10px;
+    font-size: xxx-large;
+    text-transform:uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 760px){
+    .formmm form{
+        width: 90%;
+        margin: 5% auto;
+    }
+}
+@media screen and (max-width: 480px){
+    .formmm form{
+        width: 90%;
+        margin: 5% auto;
+    }
+}
