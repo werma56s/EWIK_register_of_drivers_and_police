@@ -11,7 +11,6 @@ import Baner from '../../componets/Baner';
         return (
             <div>
             <MenuDriver />
-            <Baner />
             <LoginD/>
             <Footer/>
             </div>

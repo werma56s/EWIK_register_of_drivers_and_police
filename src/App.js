@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './modules/Home'
 import HomePolice from './modules/Police/HomePolice'
 import HomeDriver from './modules/Driver/HomeDriver'
-import LoginDriver from './modules/Driver/LoginDriver';
+import LoginD from "./componets/LoginD";
+import LoginP from "./componets/LoginP";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
           <Route exact path={'/'} component={Home}/>
           <Route path={'/HomePolice'}  component={HomePolice}/>
           <Route path={'/HomeDriver'} component={HomeDriver}/>
-          <Route path={'/LoginDriver'} component={LoginDriver}/>
+          <Route path={'/Login'} component={LoginD}/>
+          <Route path={'/LoginP'} component={LoginP}/>
+          {/*<Route path={'/LoginDriver'} component={LoginDriver}/> */}
         </Switch>
       </Router>
     </div>

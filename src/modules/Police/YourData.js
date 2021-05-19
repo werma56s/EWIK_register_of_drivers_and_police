@@ -19,6 +19,11 @@ import '../Driver/style/YourDataD.css'
             })
         }, 2500)
     }
+
+     editPolice(id){
+         this.props.history.push(`/HomePolice/police-data-update/${id}`);
+     }
+
     render() {
         return (
             <div className="table-responsive">
@@ -28,7 +33,10 @@ import '../Driver/style/YourDataD.css'
                     <tr><th>Numer służbowy</th> <th>Imie i nazwisko</th><th>Jedonstka macierzysta</th><th>Stopień</th></tr>
                         {this.state.loader ? <div>"Landing..."</div>:
                         <>{this.state.data.map((item) => {
-                        return <tr key={item.pid}><th>{item.pnrSluz}</th> <th>{item.pimie} {item.pnazwisko}</th> <th>{item.pjednosMacierz}</th> <th>{item.pstopien}</th></tr>})}</>}
+                        return <tr key={item.pid}><th>{item.pnrSluz}</th> <th>{item.pimie} {item.pnazwisko}</th> <th>{item.pjednosMacierz}</th> <th>{item.pstopien}</th>
+                            <button onClick={ () => this.editPolice(item.pid)} className="btn btn-info">Update </button>
+                        </tr>})}
+                        </>}
                     </tbody> 
                 </table>
             </div>
